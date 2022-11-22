@@ -1,0 +1,27 @@
+package test.ch07;
+
+public class SupersonicAirplane extends Airplane {
+
+	public static final int NORMAL = 1;
+	public static final int SUPERSONIC= 2;
+	
+	// 필드
+	public int flyMode = NORMAL;
+
+	@Override
+	public void fly() {
+		if(flyMode == SUPERSONIC) {
+			System.out.println("초음속비행");
+		} else { // normal 일 때
+			super.fly();			
+		}
+		
+		// super.메소드명() -> 우선순위 높음, 부모클래스의 메소드 실행
+		super.fly();
+	}
+
+	
+	
+	
+	
+}
