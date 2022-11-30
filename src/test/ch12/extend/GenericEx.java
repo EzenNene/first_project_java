@@ -2,7 +2,7 @@ package test.ch12.extend;
 
 public class GenericEx {
 
-	public static <T extends Object> boolean compare(T t1, T t2) {
+	public static <T extends Number> boolean compare(T t1, T t2) {
 		
 		double v1 = t1.doubleValue();
 		double v2 = t2.doubleValue();
