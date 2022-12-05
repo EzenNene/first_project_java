@@ -4,6 +4,8 @@ public class SyncEx {
 
 	public static void main(String[] args) {
 
+		// thread.start
+		// thread implements Runnable
 		Calculator calculator = new Calculator();
 	
 		User1Thread user1 = new User1Thread();

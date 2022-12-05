@@ -11,10 +11,13 @@ public class Calculator {
 	// 메소드에 동기화 걸기
 	public synchronized void setMemory1(int memory) {
 		this.memory = memory;
-		try {
-			Thread.sleep(2000); // 2초간정지
-		} catch (InterruptedException e) {
-		}
+
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} // 2초간정지
 
 		System.out.println(Thread.currentThread().getName() + ":" + this.memory);
 
